@@ -13,7 +13,7 @@ You can download some PBF files on these URLS for instance :
 
 ```
 cd settings
-wget -c -O country.pbf http://download.openstreetmap.fr/extracts/africa/south_africa.osm.pbf
+wget -c -O country.pbf http://download.geofabrik.de/africa/tanzania-latest.osm.pbf
 ```
 
 ### Clipping
@@ -158,5 +158,9 @@ out skel qt;
 this is the querry from [http://overpass-turbo.eu/](http://overpass-turbo.eu/) . We can used it to get flood layers from osm so we need to get it an automated way to get /exctract flood layers.
 
 PBF file for Tanzania [http://download.geofabrik.de/africa/tanzania-latest.osm.pbf](http://download.geofabrik.de/africa/tanzania-latest.osm.pbf)
+
+You can put a shapefile in the clip folder. This shapefile will be used for clipping every features after the import. This file has to be named 'clip.shp'. When the database container is running, import the shapefile in the database using the command : 'make import_clip'.
+
+You can remove the clip file : 'make remove_clip'.
 
 Clip file for Tanzania [http://download.geofabrik.de/africa/tanzania-latest-free.shp.zip](http://download.geofabrik.de/africa/tanzania-latest-free.shp.zip)
