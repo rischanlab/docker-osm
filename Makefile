@@ -93,3 +93,11 @@ backup_styles:
 	@echo "------------------------------------------------------------------"
 	@echo "SET XML OPTION DOCUMENT;" > BACKUP-STYLES.sql
 	@ docker exec -t $(PROJECT_ID)_db su - postgres -c "/usr/bin/pg_dump --format plain --inserts --table public.layer_styles gis" >> BACKUP-STYLES.sql
+	
+dbshell:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Shelling in in production database"
+	@echo "------------------------------------------------------------------"
+	@docker exec -t -i $(PROJECT_ID)-db psql -U docker -h localhost gis
+
