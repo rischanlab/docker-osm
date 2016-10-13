@@ -1,0 +1,387 @@
+rischan@staging:/home/web/docker-osm$ make rundev 
+
+------------------------------------------------------------------
+Running in DEVELOPMENT mode
+------------------------------------------------------------------
+Starting dockerosm_storage
+Recreating dockerosm_db
+dockerosm_osmupdate is up-to-date
+Creating dockerosm_imposm
+Attaching to dockerosm_storage, dockerosm_osmupdate, dockerosm_db, dockerosm_imposm
+dockerosm_storage exited with code 0
+imposm_1     | No custom SQL files *.sql detected in /home/settings
+imposm_1     | /home/settings/qgis_style.sql detected for QGIS styling.
+imposm_1     | No *.shp detected in /home/settings, so no clipping.
+imposm_1     | The checkup is OK. The container will continue soon, after the database.
+osmupdate_1  | The checkup is OK. The container will continue soon, after the database.
+osmupdate_1  | Timestamp from the original state file : 2016-10-12T19:28:02Z
+osmupdate_1  | Old time     : 2016-10-12T19:28:02Z
+osmupdate_1  | Current time : 2016-10-13T13:37:03Z
+osmupdate_1  | osmupdate -v --max-days=100 sporadic --max-merge=7 --compression-level=1 --base-url=http://planet.openstreetmap.org/replication/ 2016-10-12T19:28:02Z /home/import_queue/2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+osmupdate_1  | osmupdate Parameter: --max-days=100
+osmupdate_1  | osmupdate Parameter: sporadic
+osmupdate_1  | osmupdate Parameter: --max-merge=7
+osmupdate_1  | osmupdate Parameter: --compression-level=1
+osmupdate_1  | osmupdate Parameter: --base-url=http://planet.openstreetmap.org/replication/
+osmupdate_1  | osmupdate Parameter: 2016-10-12T19:28:02Z
+osmupdate_1  | osmupdate Parameter: /home/import_queue/2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+osmupdate_1  | osmupdate: newest sporadic timestamp: (no timestamp)
+osmupdate_1  | osmupdate: newest minutely timestamp: 2016-10-13T13:36:02Z
+osmupdate_1  | osmupdate: newest hourly timestamp: 2016-10-13T13:00:00Z
+osmupdate_1  | osmupdate: newest daily timestamp: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: minutely changefile 2139012: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139011: 2016-10-13T13:35:03Z
+osmupdate_1  | osmupdate: minutely changefile 2139011: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139010: 2016-10-13T13:34:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139010: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139009: 2016-10-13T13:33:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139009: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139008: 2016-10-13T13:32:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139008: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139007: 2016-10-13T13:31:03Z
+osmupdate_1  | osmupdate: minutely changefile 2139007: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139006: 2016-10-13T13:30:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139006: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: minutely changefile 2139005: 2016-10-13T13:29:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139005: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139004: 2016-10-13T13:28:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139004: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139003: 2016-10-13T13:27:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139003: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139002: 2016-10-13T13:26:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139002: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139001: 2016-10-13T13:25:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139001: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139000: 2016-10-13T13:24:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139000: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138999: 2016-10-13T13:23:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138999: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: minutely changefile 2138998: 2016-10-13T13:22:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138998: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138997: 2016-10-13T13:21:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138997: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138996: 2016-10-13T13:20:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138996: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138995: 2016-10-13T13:19:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138995: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138994: 2016-10-13T13:18:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138994: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138993: 2016-10-13T13:17:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138993: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138992: 2016-10-13T13:16:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138992: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: minutely changefile 2138991: 2016-10-13T13:15:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138991: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138990: 2016-10-13T13:14:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138990: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138989: 2016-10-13T13:13:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138989: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138988: 2016-10-13T13:12:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138988: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138987: 2016-10-13T13:11:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138987: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138986: 2016-10-13T13:10:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138986: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138985: 2016-10-13T13:09:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138985: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: minutely changefile 2138984: 2016-10-13T13:08:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138984: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138983: 2016-10-13T13:07:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138983: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138982: 2016-10-13T13:06:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138982: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138981: 2016-10-13T13:05:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138981: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138980: 2016-10-13T13:04:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138980: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138979: 2016-10-13T13:03:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138979: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138978: 2016-10-13T13:02:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138978: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: minutely changefile 2138977: 2016-10-13T13:01:03Z
+osmupdate_1  | osmupdate: minutely changefile 2138977: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138976: 2016-10-13T13:00:02Z
+osmupdate_1  | osmupdate: minutely changefile 2138976: downloading
+osmupdate_1  | osmupdate: minutely changefile 2138975: 2016-10-13T12:59:02Z
+osmupdate_1  | osmupdate: hourly changefile 35814: downloading
+osmupdate_1  | osmupdate: hourly changefile 35813: 2016-10-13T12:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35813: downloading
+osmupdate_1  | osmupdate: hourly changefile 35812: 2016-10-13T11:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35812: downloading
+osmupdate_1  | osmupdate: hourly changefile 35811: 2016-10-13T10:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35811: downloading
+osmupdate_1  | osmupdate: hourly changefile 35810: 2016-10-13T09:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35810: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: hourly changefile 35809: 2016-10-13T08:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35809: downloading
+osmupdate_1  | osmupdate: hourly changefile 35808: 2016-10-13T07:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35808: downloading
+osmupdate_1  | osmupdate: hourly changefile 35807: 2016-10-13T06:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35807: downloading
+osmupdate_1  | osmupdate: hourly changefile 35806: 2016-10-13T05:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35806: downloading
+osmupdate_1  | osmupdate: hourly changefile 35805: 2016-10-13T04:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35805: downloading
+osmupdate_1  | osmupdate: hourly changefile 35804: 2016-10-13T03:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35804: downloading
+osmupdate_1  | osmupdate: hourly changefile 35803: 2016-10-13T02:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35803: downloading
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: hourly changefile 35802: 2016-10-13T01:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35802: downloading
+osmupdate_1  | osmupdate: hourly changefile 35801: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35801: downloading
+osmupdate_1  | osmupdate: hourly changefile 35800: 2016-10-12T23:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35800: downloading
+osmupdate_1  | osmupdate: hourly changefile 35799: 2016-10-12T22:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35799: downloading
+osmupdate_1  | osmupdate: hourly changefile 35798: 2016-10-12T21:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35798: downloading
+osmupdate_1  | osmupdate: hourly changefile 35797: 2016-10-12T20:00:00Z
+osmupdate_1  | osmupdate: hourly changefile 35797: downloading
+osmupdate_1  | osmupdate: hourly changefile 35796: 2016-10-12T19:00:00Z
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: Creating output file.
+osmupdate_1  | osmupdate: Deleting temporary files.
+osmupdate_1  | osmupdate: Completed successfully.
+osmupdate_1  | Creating diff successful : 2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+osmupdate_1  | Sleeping for 120 seconds.
+osmupdate_1  | Timestamp from the latest not imported diff : 2016-10-13T13:37:03Z
+osmupdate_1  | Old time     : 2016-10-13T13:37:03Z
+osmupdate_1  | Current time : 2016-10-13T13:39:26Z
+osmupdate_1  | osmupdate -v --max-days=100 sporadic --max-merge=7 --compression-level=1 --base-url=http://planet.openstreetmap.org/replication/ 2016-10-13T13:37:03Z /home/import_queue/2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+osmupdate_1  | osmupdate Parameter: --max-days=100
+osmupdate_1  | osmupdate Parameter: sporadic
+osmupdate_1  | osmupdate Parameter: --max-merge=7
+osmupdate_1  | osmupdate Parameter: --compression-level=1
+osmupdate_1  | osmupdate Parameter: --base-url=http://planet.openstreetmap.org/replication/
+osmupdate_1  | osmupdate Parameter: 2016-10-13T13:37:03Z
+osmupdate_1  | osmupdate Parameter: /home/import_queue/2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+osmupdate_1  | osmupdate: newest sporadic timestamp: (no timestamp)
+osmupdate_1  | osmupdate: newest minutely timestamp: 2016-10-13T13:39:02Z
+osmupdate_1  | osmupdate: newest hourly timestamp: 2016-10-13T13:00:00Z
+osmupdate_1  | osmupdate: newest daily timestamp: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: minutely changefile 2139015: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139014: 2016-10-13T13:38:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139014: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139013: 2016-10-13T13:37:02Z
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: Creating output file.
+osmupdate_1  | osmupdate: Deleting temporary files.
+osmupdate_1  | osmupdate: Completed successfully.
+osmupdate_1  | Creating diff successful : 2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+osmupdate_1  | Sleeping for 120 seconds.
+db_1         | 
+db_1         | PostgreSQL stand-alone backend 9.4.3
+db_1         | backend> backend> 2016-10-13 13:41:10 UTC [27-1] LOG:  database system was shut down at 2016-10-13 13:41:10 UTC
+db_1         | 2016-10-13 13:41:10 UTC [31-1] LOG:  autovacuum launcher started
+db_1         | 2016-10-13 13:41:10 UTC [25-1] LOG:  database system is ready to accept connections
+db_1         | Postgis is missing, installing now
+db_1         | Creating template postgis
+osmupdate_1  | Timestamp from the latest not imported diff : 2016-10-13T13:39:26Z
+osmupdate_1  | Old time     : 2016-10-13T13:39:26Z
+osmupdate_1  | Current time : 2016-10-13T13:41:26Z
+osmupdate_1  | osmupdate -v --max-days=100 sporadic --max-merge=7 --compression-level=1 --base-url=http://planet.openstreetmap.org/replication/ 2016-10-13T13:39:26Z /home/import_queue/2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+osmupdate_1  | osmupdate Parameter: --max-days=100
+osmupdate_1  | osmupdate Parameter: sporadic
+osmupdate_1  | osmupdate Parameter: --max-merge=7
+osmupdate_1  | osmupdate Parameter: --compression-level=1
+osmupdate_1  | osmupdate Parameter: --base-url=http://planet.openstreetmap.org/replication/
+osmupdate_1  | osmupdate Parameter: 2016-10-13T13:39:26Z
+osmupdate_1  | osmupdate Parameter: /home/import_queue/2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+osmupdate_1  | osmupdate: newest sporadic timestamp: (no timestamp)
+osmupdate_1  | osmupdate: newest minutely timestamp: 2016-10-13T13:41:02Z
+osmupdate_1  | osmupdate: newest hourly timestamp: 2016-10-13T13:00:00Z
+osmupdate_1  | osmupdate: newest daily timestamp: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: minutely changefile 2139017: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139016: 2016-10-13T13:40:03Z
+osmupdate_1  | osmupdate: minutely changefile 2139016: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139015: 2016-10-13T13:39:02Z
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: Creating output file.
+osmupdate_1  | osmupdate: Deleting temporary files.
+osmupdate_1  | osmupdate: Completed successfully.
+osmupdate_1  | Creating diff successful : 2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+osmupdate_1  | Sleeping for 120 seconds.
+db_1         | Enabling template_postgis as a template
+db_1         | UPDATE 1
+db_1         | Loading postgis extension
+db_1         | CREATE EXTENSION
+db_1         | Enabling hstore in the template
+db_1         | CREATE EXTENSION
+db_1         | Enabling topology in the template
+db_1         | CREATE EXTENSION
+db_1         | Loading legacy sql
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE FUNCTION
+db_1         | CREATE OPERATOR CLASS
+db_1         |                                  List of databases
+db_1         |        Name       |  Owner   | Encoding  | Collate | Ctype |   Access privileges   
+db_1         | ------------------+----------+-----------+---------+-------+-----------------------
+db_1         |  gis              | docker   | UTF8      | C       | C     | 
+db_1         |  postgres         | postgres | SQL_ASCII | C       | C     | 
+db_1         |  template0        | postgres | SQL_ASCII | C       | C     | =c/postgres          +
+db_1         |                   |          |           |         |       | postgres=CTc/postgres
+db_1         |  template1        | postgres | SQL_ASCII | C       | C     | =c/postgres          +
+db_1         |                   |          |           |         |       | postgres=CTc/postgres
+db_1         |  template_postgis | postgres | UTF8      | C       | C     | 
+db_1         | (5 rows)
+db_1         | 
+db_1         | Postgres initialisation process completed .... restarting in foreground
+db_1         | 2016-10-13 13:41:51 UTC [147-1] LOG:  database system was interrupted; last known up at 2016-10-13 13:41:51 UTC
+db_1         | 2016-10-13 13:41:52 UTC [147-2] LOG:  database system was not properly shut down; automatic recovery in progress
+db_1         | 2016-10-13 13:41:52 UTC [147-3] LOG:  redo starts at 0/1D692E0
+db_1         | 2016-10-13 13:41:52 UTC [147-4] LOG:  record with zero length at 0/1D69320
+db_1         | 2016-10-13 13:41:52 UTC [147-5] LOG:  redo done at 0/1D692E0
+db_1         | 2016-10-13 13:41:52 UTC [147-6] LOG:  last completed transaction was at log time 2016-10-13 13:41:51.237223+00
+db_1         | 2016-10-13 13:41:52 UTC [144-1] LOG:  database system is ready to accept connections
+db_1         | 2016-10-13 13:41:52 UTC [151-1] LOG:  autovacuum launcher started
+imposm_1     | The database is empty. Let's import the PBF : /home/settings/country.pbf
+imposm_1     | imposm3 import -diff -deployproduction -overwritecache -cachedir /home/cache -srid 4326 -dbschema-production public -dbschema-import import -dbschema-backup backup -diffdir /home/settings -mapping /home/settings/mapping.json -read /home/settings/country.pbf -write -connection postgis://docker:docker@db/gis
+[Oct 13 13:41:54] [INFO] [reader] reading /home/settings/country.pbf with data till 2016-10-12 19:28:02 +0000 UTC
+[Oct 13 13:42:03] [INFO] [    8s] C: 1382000/s (8921362) N:       0/s (0) W:  408500/s (962962) R:      0/s (130)
+[Oct 13 13:42:03] [INFO] Reading OSM data took: 10.069320774s
+[Oct 13 13:42:13] [INFO] [    9s] C:       0/s ( 0.0%) N:       0/s (0) W:  175200/s (100.0%) R:   1310/s (100.0%)
+[Oct 13 13:42:13] [INFO] Writing OSM data took: 9.299498843s
+[Oct 13 13:42:13] [INFO] [PostGIS] Creating generalized tables took: 37.624µs
+[Oct 13 13:42:13] [INFO] [PostGIS] Creating OSM id index on osm_flood took: 73.754984ms
+[Oct 13 13:42:13] [INFO] [PostGIS] Creating geometry index on osm_flood took: 44.977055ms
+imposm_1     | [Oct 13 13:42:13] [INFO] [PostGIS] Creating geometry indices took: 118.971801ms
+imposm_1     | [Oct 13 13:42:13] [INFO] Importing OSM data took: 9.418603078s
+[Oct 13 13:42:13] [INFO] [PostGIS] Rotating osm_flood from import -> public -> backup
+[Oct 13 13:42:13] [INFO] [PostGIS] Rotating tables took: 58.257058ms
+imposm_1     | [Oct 13 13:42:13] [INFO] Imposm took: 19.586492144s
+imposm_1     | Import PBF successful : /home/settings/country.pbf
+imposm_1     | Installing QGIS styles.
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | SET
+imposm_1     | CREATE TABLE
+imposm_1     | ALTER TABLE
+imposm_1     | CREATE SEQUENCE
+imposm_1     | ALTER TABLE
+imposm_1     | ALTER SEQUENCE
+imposm_1     | ALTER TABLE
+imposm_1     | INSERT 0 1
+imposm_1     | INSERT 0 1
+imposm_1     |  setval 
+imposm_1     | --------
+imposm_1     |       2
+imposm_1     | (1 row)
+imposm_1     | 
+imposm_1     | ALTER TABLE
+imposm_1     | Importing diff 2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+imposm_1     | imposm3 diff -cachedir /home/cache -dbschema-production public -dbschema-import import -dbschema-backup backup -srid 4326 -diffdir /home/settings -mapping /home/settings/mapping.json -connection postgis://docker:docker@db/gis /home/import_queue/2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+               [Oct 13 13:42:15] [WARN] [diff] cannot find state file /home/import_queue/2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.state.txt
+[Oct 13 13:43:15] [INFO] [  1m0s] C:   25000/s (1544836) N:       0/s (0) W:       0/s (0) R:      0/s (0)
+osmupdate_1  | Timestamp from the latest not imported diff : 2016-10-13T13:41:26Z
+osmupdate_1  | Old time     : 2016-10-13T13:41:26Z
+osmupdate_1  | Current time : 2016-10-13T13:43:27Z
+osmupdate_1  | osmupdate -v --max-days=100 sporadic --max-merge=7 --compression-level=1 --base-url=http://planet.openstreetmap.org/replication/ 2016-10-13T13:41:26Z /home/import_queue/2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+osmupdate_1  | osmupdate Parameter: --max-days=100
+osmupdate_1  | osmupdate Parameter: sporadic
+osmupdate_1  | osmupdate Parameter: --max-merge=7
+osmupdate_1  | osmupdate Parameter: --compression-level=1
+osmupdate_1  | osmupdate Parameter: --base-url=http://planet.openstreetmap.org/replication/
+osmupdate_1  | osmupdate Parameter: 2016-10-13T13:41:26Z
+osmupdate_1  | osmupdate Parameter: /home/import_queue/2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+osmupdate_1  | osmupdate: newest sporadic timestamp: (no timestamp)
+osmupdate_1  | osmupdate: newest minutely timestamp: 2016-10-13T13:43:02Z
+osmupdate_1  | osmupdate: newest hourly timestamp: 2016-10-13T13:00:00Z
+osmupdate_1  | osmupdate: newest daily timestamp: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: minutely changefile 2139019: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139018: 2016-10-13T13:42:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139018: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139017: 2016-10-13T13:41:02Z
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: Creating output file.
+osmupdate_1  | osmupdate: Deleting temporary files.
+osmupdate_1  | osmupdate: Completed successfully.
+osmupdate_1  | Creating diff successful : 2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+osmupdate_1  | Sleeping for 120 seconds.
+[Oct 13 13:43:50] [INFO] [diff] Parsing changes, updating cache and removing elements took: 1m34.723727785s
+[Oct 13 13:43:50] [INFO] [ 1m34s] C:   25000/s (1624841) N:       0/s (0) W:    8600/s (262882) R:   2310/s (3686)
+[Oct 13 13:44:00] [INFO] [PostGIS] Updating generalized tables took: 21.553µs
+imposm_1     | [Oct 13 13:44:00] [INFO] [diff] Writing added/modified elements took: 10.159644829s
+imposm_1     | [Oct 13 13:44:00] [INFO] [   10s] C:       0/s (0) N:       0/s (0) W:   73300/s (198221) R:   3300/s (771)
+imposm_1     | [Oct 13 13:44:00] [INFO] [diff] Processing /home/import_queue/2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz took: 1m44.887181293s
+imposm_1     | Import diff successful : 2016-10-12T19:28:02Z->-2016-10-13T13:37:03Z.osc.gz
+imposm_1     | Importing diff 2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+imposm_1     | imposm3 diff -cachedir /home/cache -dbschema-production public -dbschema-import import -dbschema-backup backup -srid 4326 -diffdir /home/settings -mapping /home/settings/mapping.json -connection postgis://docker:docker@db/gis /home/import_queue/2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+               [Oct 13 13:44:02] [WARN] [diff] cannot find state file /home/import_queue/2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.state.txt
+[Oct 13 13:44:02] [INFO] [diff] Parsing changes, updating cache and removing elements took: 345.995202ms
+[Oct 13 13:44:02] [INFO] [     0] C:       0/s (5514) N:       0/s (0) W:       0/s (986) R:      0/s (3)
+[Oct 13 13:44:02] [INFO] [PostGIS] Updating generalized tables took: 19.879µs
+imposm_1     | [Oct 13 13:44:02] [INFO] [diff] Writing added/modified elements took: 115.900671ms
+imposm_1     | [Oct 13 13:44:02] [INFO] [diff] Processing /home/import_queue/2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz took: 465.786123ms
+imposm_1     | [Oct 13 13:44:02] [INFO] [     0] C:       0/s (0) N:       0/s (0) W:       0/s (780) R:      0/s (1)
+imposm_1     | Import diff successful : 2016-10-13T13:37:03Z->-2016-10-13T13:39:26Z.osc.gz
+imposm_1     | Importing diff 2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+imposm_1     | imposm3 diff -cachedir /home/cache -dbschema-production public -dbschema-import import -dbschema-backup backup -srid 4326 -diffdir /home/settings -mapping /home/settings/mapping.json -connection postgis://docker:docker@db/gis /home/import_queue/2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+               [Oct 13 13:44:04] [WARN] [diff] cannot find state file /home/import_queue/2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.state.txt
+[Oct 13 13:44:04] [INFO] [diff] Parsing changes, updating cache and removing elements took: 253.90872ms
+[Oct 13 13:44:04] [INFO] [     0] C:       0/s (4351) N:       0/s (0) W:       0/s (1055) R:      0/s (9)
+[Oct 13 13:44:04] [INFO] [PostGIS] Updating generalized tables took: 21.849µs
+imposm_1     | [Oct 13 13:44:04] [INFO] [diff] Writing added/modified elements took: 23.25483ms
+imposm_1     | [Oct 13 13:44:04] [INFO] [diff] Processing /home/import_queue/2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz took: 281.199095ms
+imposm_1     | [Oct 13 13:44:04] [INFO] [     0] C:       0/s (0) N:       0/s (0) W:       0/s (845) R:      0/s (0)
+imposm_1     | Import diff successful : 2016-10-13T13:39:26Z->-2016-10-13T13:41:26Z.osc.gz
+imposm_1     | Importing diff 2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+imposm_1     | imposm3 diff -cachedir /home/cache -dbschema-production public -dbschema-import import -dbschema-backup backup -srid 4326 -diffdir /home/settings -mapping /home/settings/mapping.json -connection postgis://docker:docker@db/gis /home/import_queue/2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+               [Oct 13 13:44:07] [WARN] [diff] cannot find state file /home/import_queue/2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.state.txt
+[Oct 13 13:44:07] [INFO] [diff] Parsing changes, updating cache and removing elements took: 143.524294ms
+[Oct 13 13:44:07] [INFO] [     0] C:       0/s (2468) N:       0/s (0) W:       0/s (558) R:      0/s (3)
+[Oct 13 13:44:07] [INFO] [PostGIS] Updating generalized tables took: 13.243µs
+imposm_1     | [Oct 13 13:44:07] [INFO] [diff] Writing added/modified elements took: 16.471429ms
+imposm_1     | [Oct 13 13:44:07] [INFO] [diff] Processing /home/import_queue/2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz took: 165.913386ms
+imposm_1     | [Oct 13 13:44:07] [INFO] [     0] C:       0/s (0) N:       0/s (0) W:       0/s (470) R:      0/s (0)
+imposm_1     | Import diff successful : 2016-10-13T13:41:26Z->-2016-10-13T13:43:27Z.osc.gz
+imposm_1     | Sleeping for 120 seconds.
+osmupdate_1  | Timestamp from the latest imported diff : 2016-10-13T13:43:27Z
+osmupdate_1  | Old time     : 2016-10-13T13:43:27Z
+osmupdate_1  | Current time : 2016-10-13T13:45:27Z
+osmupdate_1  | osmupdate -v --max-days=100 sporadic --max-merge=7 --compression-level=1 --base-url=http://planet.openstreetmap.org/replication/ 2016-10-13T13:43:27Z /home/import_queue/2016-10-13T13:43:27Z->-2016-10-13T13:45:27Z.osc.gz
+osmupdate_1  | osmupdate Parameter: --max-days=100
+osmupdate_1  | osmupdate Parameter: sporadic
+osmupdate_1  | osmupdate Parameter: --max-merge=7
+osmupdate_1  | osmupdate Parameter: --compression-level=1
+osmupdate_1  | osmupdate Parameter: --base-url=http://planet.openstreetmap.org/replication/
+osmupdate_1  | osmupdate Parameter: 2016-10-13T13:43:27Z
+osmupdate_1  | osmupdate Parameter: /home/import_queue/2016-10-13T13:43:27Z->-2016-10-13T13:45:27Z.osc.gz
+osmupdate_1  | osmupdate: newest sporadic timestamp: (no timestamp)
+osmupdate_1  | osmupdate: newest minutely timestamp: 2016-10-13T13:45:02Z
+osmupdate_1  | osmupdate: newest hourly timestamp: 2016-10-13T13:00:00Z
+osmupdate_1  | osmupdate: newest daily timestamp: 2016-10-13T00:00:00Z
+osmupdate_1  | osmupdate: minutely changefile 2139021: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139020: 2016-10-13T13:44:02Z
+osmupdate_1  | osmupdate: minutely changefile 2139020: downloading
+osmupdate_1  | osmupdate: minutely changefile 2139019: 2016-10-13T13:43:02Z
+osmupdate_1  | osmupdate: Merging changefiles.
+osmupdate_1  | osmupdate: Creating output file.
+osmupdate_1  | osmupdate: Deleting temporary files.
+osmupdate_1  | osmupdate: Completed successfully.
+osmupdate_1  | Creating diff successful : 2016-10-13T13:43:27Z->-2016-10-13T13:45:27Z.osc.gz
+osmupdate_1  | Sleeping for 120 seconds.
