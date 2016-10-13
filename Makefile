@@ -99,5 +99,5 @@ dbshell:
 	@echo "------------------------------------------------------------------"
 	@echo "Shelling in in production database"
 	@echo "------------------------------------------------------------------"
-	@docker exec -t -i $(PROJECT_ID)-db psql -U docker -h localhost gis
+	@docker exec -t -i $(PROJECT_ID)_db psql -U docker -h localhost gis
 
