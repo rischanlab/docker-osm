@@ -130,3 +130,33 @@ With some important design ideas provided by Ariel Nunez (ingenieroariel@gmail.c
 Parts of this project are built on the existing work of others.
 
 July 2015
+
+
+
+
+I need to finding an automated way to publish flood data in oondra since osm data is constantly being updated downloading it once and using it does not make sense.
+
+```
+/*
+This query looks for nodes, ways and relations 
+with the given key/value combination.
+Choose your region and hit the Run button above!
+*/
+[out:json][timeout:25];
+// gather results
+(
+  // query part for: “natural=wetland”
+  node["natural"="wetland"]({{bbox}});
+  way["natural"="wetland"]({{bbox}});
+  relation["natural"="wetland"]({{bbox}});
+);
+// print results
+out body;
+>;
+out skel qt;
+```
+this is the querry from [http://overpass-turbo.eu/](http://overpass-turbo.eu/) . We can used it to get flood layers from osm so we need to get it an automated way to get /exctract flood layers.
+
+PBF file for Tanzania [http://download.geofabrik.de/africa/tanzania-latest.osm.pbf](http://download.geofabrik.de/africa/tanzania-latest.osm.pbf)
+
+Clip file for Tanzania [http://download.geofabrik.de/africa/tanzania-latest-free.shp.zip](http://download.geofabrik.de/africa/tanzania-latest-free.shp.zip)
