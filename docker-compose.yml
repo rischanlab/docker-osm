@@ -25,6 +25,28 @@ db:
   ports:
    - "54333:5432"
 
+dbbackups:
+  # Note you cannot scale if you use conteiner_name
+  container_name: dockerosm-db-backups
+  image: kartoza/pg-backup:9.4
+  hostname: pg-backups
+  volumes:
+    - ./backups:/backups
+  links:
+    - db:db
+  environment:
+    # take care to let the project name below match that
+    # declared in the top of the makefile
+    - DUMPPREFIX=PG_dockerosm
+    # These are all defaults anyway, but setting explicitly in
+    # case we ever want to ever use different credentials
+    - PGUSER=docker
+    - PGPASSWORD=docker
+    - PGPORT=5432
+    - PGHOST=db
+    - PGDATABASE=gis
+  restart: always
+
 imposm:
   build: docker-imposm3
   container_name: dockerosm_imposm
